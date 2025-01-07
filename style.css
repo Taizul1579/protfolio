@@ -81,6 +81,31 @@ section{
     
     align-items: center;
 }
+.startbutton {
+    
+    display: inline-block;
+    padding: 1rem 1rem;
+    background:orangered ;
+    
+    border: 0.2rem solid var(--main-color);
+    font-size: 1.6rem;
+    color: var(--bg-color); 
+    font-weight: 500;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 45px;
+    
+    text-decoration: none;
+    box-shadow: 0 0 1rem var(--main-color);
+    transsition: 0.5s;
+    animation: startanim;
+}
+.startbutton:hover{
+    background: var(--main-color);
+    border: 0.2rem solid orangered;
+    
+
+}
 .button {
     
     display: inline-block;
