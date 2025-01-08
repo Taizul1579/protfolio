@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+}
+.mobile h1{
+    font-size: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+header{
+    visibility: hidden;
+}
