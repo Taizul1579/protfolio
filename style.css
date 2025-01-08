@@ -57,6 +57,10 @@ section{
     background: var(--bg-color);
 
 }
+.getstarted{
+    height: 10px;
+    width: 20px;
+}
 .home{
     display: flex;
     align-items: center;
@@ -71,6 +75,34 @@ section{
     margin-top: -1rem;
     font-size: 3.2rem;
 }
+.home-details h2 span{
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: 0.07rem var(--main-color);
+    animation: display-text 16s linear infinite;
+    animation-delay: calc(-4s*var(--i));
+}
+@keyframes display-text{
+    25%,100%{
+        display: none;
+    }
+}
+.home-details h2 span::before{
+    content:attr(data-text);
+    position: absolute;
+    width: 0;
+    border-right: 0.2rem solid orangered;
+    color: var(--main-color );
+    overflow: hidden;
+    animation: fill-text 4s linear infinite;
+}
+@keyframes fill-text{
+    10%,100%{
+        width: 0;
+    }
+    70%,90%{width: 100%;}
+}
 .home-details p{
     font-size: 1.6rem;
     margin: 1rem 0 2.5rem;
@@ -80,6 +112,33 @@ section{
     display: flex;
     
     align-items: center;
+}
+.button {
+    
+    display: inline-block;
+    padding: 1rem 3rem;
+    background:var(--main-color) ;
+    border: 0.2rem solid var(--main-color);
+    font-size: 1.6rem;
+    color: var(--bg-color); 
+    font-weight: 500;
+    border-radius: 4rem;
+    text-decoration: none;
+    box-shadow: 0 0 1rem var(--main-color);
+    transsition: 0.5s;
+}
+.button:hover{
+    background: transparent;
+    color: var(--main-color) ;
+    border:  solid var(--main-color);
+    box-shadow: none;
+}
+
+.startbutton span{
+    color: white;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
 }
 .startbutton {
     
@@ -106,26 +165,8 @@ section{
     
 
 }
-.button {
-    
-    display: inline-block;
-    padding: 1rem 3rem;
-    background:var(--main-color) ;
-    border: 0.2rem solid var(--main-color);
-    font-size: 1.6rem;
-    color: var(--bg-color); 
-    font-weight: 500;
-    border-radius: 4rem;
-    text-decoration: none;
-    box-shadow: 0 0 1rem var(--main-color);
-    transsition: 0.5s;
-}
-.button:hover{
-    background: transparent;
-    color: var(--main-color) ;
-    border:  solid var(--main-color);
-    box-shadow: none;
-}
+
+
 .home-details .allbutton .social{
     margin-left: 2rem;
 
@@ -194,3 +235,4 @@ section{
     object-fit: cover;
     mix-blend-mode: lighten;
 }
+ 
