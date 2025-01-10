@@ -6,9 +6,7 @@
 body{
     background-color:black;
     display: flex;
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
+    
     
    
     
@@ -31,6 +29,8 @@ body{
         position: relative;
         padding:20px;
         margin: 0 auto;
+        
+        top: 150px;
         
         
     
