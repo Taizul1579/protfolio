@@ -8,6 +8,7 @@ body{
     display: flex;
     justify-items: center;
     justify-content: center;
+    align-content: center;
     
    
     
@@ -29,6 +30,7 @@ body{
     .container{
         position: relative;
         padding:20px;
+        margin: 0 auto;
         
         
     
